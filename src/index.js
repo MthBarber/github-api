@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-import { AUTH_TOKEN } from './pat';
+import { AUTH_TOKEN } from './PAT';
 
 // Set up ApolloClient to interact with the React App
 const client = new ApolloClient({
