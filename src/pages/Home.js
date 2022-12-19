@@ -12,7 +12,12 @@ export const Home = () => {
   return (
     <div className='w-full h-full flex flex-col justify-center items-center'>
         <div>Home</div>
-        <button onClick={handleClick}>Show Search View</button>
+        <button 
+        onClick={handleClick}
+        className="border-x-2 border-y-2 border-purple-600"
+        >
+            Show Search View
+        </button>
         {(homeView === true) ?
         <ShowMyRepos />
         :

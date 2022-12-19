@@ -28,8 +28,10 @@ export const SearchForRepo = ({ repoName, repoOwner }) => {
     if (error) return <div>There was an error fetching your data!</div>
 
     return (
-        <section key={data.id}>
-            <div>
+        <section key={data.id}
+            className="my-4"
+        >
+            <div className='flex flex-col items-center justify-center'>
                 <a href={data.repository.url}>
                     Repository Name: {data.repository.name}
                 </a>
