@@ -4,10 +4,8 @@ import { Home } from './pages/Home';
 
 function App() {
   return (
-    <div className="App">
-      <body>
-        <Home />
-      </body>
+    <div className="w-full h-full">
+      <Home />      
     </div>
   );
 }
