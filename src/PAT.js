@@ -1,1 +1,0 @@
-export const AUTH_TOKEN = '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'
