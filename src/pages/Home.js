@@ -12,10 +12,10 @@ export const Home = () => {
 
   return (
     <div className='w-full h-full flex flex-col justify-center items-center'>
-        <div>Home</div>
+        <div className='text-2xl mb-4'>Using the Github API</div>
         <button 
         onClick={handleClick}
-        className="border-x-2 border-y-2 border-purple-600"
+        className="border-x-2 border-y-2 border-purple-600 mb-6 px-2"
         >
             Show Search View
         </button>

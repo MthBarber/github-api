@@ -36,7 +36,12 @@ export const ShowAUsersRepo = ({userName}) => {
   return (
     <div>
         {data.repositoryOwner.repositories.edges.map((repo) => {
-            return <div key={repo.node.id}> {repo.node.name} </div>
+            return <div key={repo.node.id}
+                    className='border-x-2 border-y-2 border-red-600 my-4 text-center p-4'
+            > 
+                <p>Repository Name:</p>
+                <p>{repo.node.name}</p> 
+            </div>
         })}
     </div>
   )
