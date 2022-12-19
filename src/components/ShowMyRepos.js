@@ -14,7 +14,7 @@ export const ShowMyRepos = () => {
 
     return (
         <div 
-            className="border-x-2 border-y-2 border-black"
+            className="w-1/3 border-x-2 border-y-2 border-black"
         >
             {my_repos.map((repo) => {
                 return <div key={repo.id}>

@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { ShowAUsersRepo } from '../components/ShowAUsersRepo'
 import { ShowMyRepos } from '../components/ShowMyRepos'
 
 export const Home = () => {
@@ -21,7 +22,7 @@ export const Home = () => {
         {(homeView === true) ?
         <ShowMyRepos />
         :
-        null
+        <ShowAUsersRepo userName={"MakersAcademy"} />
         }
     </div>
   )

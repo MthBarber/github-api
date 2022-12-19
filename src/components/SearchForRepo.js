@@ -31,12 +31,12 @@ export const SearchForRepo = ({ repoName, repoOwner }) => {
         <section key={data.id}
             className="my-4"
         >
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center text-purple-600'>
                 <a href={data.repository.url}>
-                    Repository Name: {data.repository.name}
+                    Repository Name: <span className='font-bold'>{data.repository.name}</span>
                 </a>
-                <p>Fork Count: {data.repository.forkCount}</p>
-                <p>Number of Stars: {data.repository.stargazerCount}</p>
+                <p>Fork Count: <span className='font-bold'> {data.repository.forkCount} </span></p>
+                <p>Number of Stars: <span className='font-bold'> {data.repository.stargazerCount} </span></p>
             </div>
         </section>
     )
